@@ -29,7 +29,6 @@ int main() {
 	cout << &p << endl;
 
 	delete p;
-
 		 
 	getchar();
 	return 0;
