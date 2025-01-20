@@ -33,6 +33,7 @@ int main() {
 	ug.m_age = 10;
 
 	cout << sizeof(Undergraduate) << endl;
+	cout << sizeof(ug) << endl;
 
 	getchar();
 	return 0;
