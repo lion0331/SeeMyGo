@@ -38,6 +38,8 @@ using namespace std;
 //};
 
 class Person {
+protected:
+
 public:
 	int m_age;
 	Person(int age = 0) :m_age(age) {}
@@ -45,10 +47,12 @@ public:
 };
 
 class Student : public Person {
+protected:
+
 public:
 	int m_score;
 	Student(int age = 0, int score = 0) :Person(age), m_score(score) {}
-	Student(const Student &student) :m_score(student.m_score) {}
+	Student(const Student &student) :Person(student), m_score(student.m_score) {}
 };
 
 /*
