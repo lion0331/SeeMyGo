@@ -1,5 +1,5 @@
 ﻿#include <iostream>
-#include "Array.hpp"
+#include "Array.h"
 
 using namespace std;
 
@@ -24,6 +24,7 @@ class Car {
 };
 
 int main() {
+
 	Array<Point> array;
 	array.add(Point(1, 2));
 	array.add(Point(3, 4));

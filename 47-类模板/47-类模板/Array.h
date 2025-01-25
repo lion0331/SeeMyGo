@@ -2,9 +2,10 @@
 #include <iostream>
 using namespace std;
 
+
 template <typename Item>
 class Array {
-	friend ostream &operator<<<>(ostream &, const Array<Item> &);
+	friend ostream& operator<<<>(ostream&, const Array<Item>&);
 	// 用于指向首元素
 	Item *m_data;
 	// 元素个数
@@ -21,12 +22,13 @@ public:
 	Item get(int index);
 	int size();
 	Item operator[](int index);
+
 };
 
 template <typename Item>
 Array<Item>::Array(int capacity) {
 	m_capacity = (capacity > 0) ? capacity : 10;
-
+	m_size = 0; // 初始化 m_size
 	// 申请堆空间
 	m_data = new Item[m_capacity];
 }
@@ -89,8 +91,9 @@ Item Array<Item>::operator[](int index) {
 	return get(index);
 }
 
+
 template <typename Item>
-ostream &operator<<<>(ostream &cout, const Array<Item> &array) {
+ostream& operator<<(ostream& cout, const Array<Item>& array) {
 	cout << "[";
 
 	for (int i = 0; i < array.m_size; i++) {
