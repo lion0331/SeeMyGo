@@ -537,6 +537,6 @@ void CSeemygoPVZCheaterDlg::OnBnClickedCourse()
 	ShellExecute(
 		NULL,
 		CString("open"),
-		CString("https://ke.qq.com/course/336509"),
+		CString("https://ke.qq.com/course/336509"),// 课程地址
 		NULL, NULL, SW_SHOWNORMAL);
 }
