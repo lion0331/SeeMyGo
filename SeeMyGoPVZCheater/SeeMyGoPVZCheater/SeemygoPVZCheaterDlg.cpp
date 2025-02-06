@@ -45,11 +45,12 @@ void WriteMemory(void *value, DWORD valueSize, ...)
 void WriteMemory(void *value, DWORD valueSize, DWORD address) {
 	WriteMemory(value, valueSize, address, -1);
 }
-
+// 在源文件中定义并初始化静态成员变量
+volatile bool g_stopMonitoringThread = false;
 // 用来监控植物大战僵尸的线程
 DWORD WINAPI MonitoringThreadProc(LPVOID lpParam)
 {
-	while (1)
+	while (!g_stopMonitoringThread)
 	{
 		// 找窗口
 		HWND hwnd = ::FindWindow(TEXT("MainWindow"), TEXT("Plants vs. Zombies"));
@@ -350,7 +351,7 @@ HBRUSH CSeemygoPVZCheaterDlg::OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor)
 	return hbr;
 }
 
-// 关闭窗口
+// 修改关闭窗口的代码
 void CSeemygoPVZCheaterDlg::OnClose()
 {
 	CDialogEx::OnClose();
@@ -358,8 +359,11 @@ void CSeemygoPVZCheaterDlg::OnClose()
 	// 去掉外挂效果
 	this->OnBnClickedCancel();
 
-	// 杀死线程
-	::TerminateThread(g_monitoringThreadHandle, 0);
+	// 通知线程退出
+	g_stopMonitoringThread = true;
+
+	// 等待线程退出
+	::WaitForSingleObject(g_monitoringThreadHandle, INFINITE);
 	::CloseHandle(g_monitoringThreadHandle);
 
 	// 关闭句柄

@@ -49,6 +49,7 @@ private:
 	afx_msg void OnLButtonDown(UINT nFlags, CPoint point);
 	afx_msg HBRUSH OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor);
 	afx_msg void OnBnClickedCourse();
+
 	CButton m_sunshine;
 	CButton m_unbreakable;
 	CButton m_coin;
