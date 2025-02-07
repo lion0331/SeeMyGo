@@ -109,7 +109,7 @@ DWORD WINAPI MonitoringThreadProc(LPVOID lpParam)
 		if (g_dlg->m_sunshine.GetCheck())
 		{ // 如果需要无限阳光
 			DWORD value = 9990;
-			WriteMemory(&value, sizeof(value), 0x6A9EC0, 0x320, 0x8, 0x0, 0x8, 0x144, 0x2c, 0x5560, -1);
+			WriteMemory(&value, sizeof(value), 0x731C50, 0x868, 0x5578, -1);
 		}
 
 		::Sleep(MONITOR_REFRESH_TIME_INTERVAL);
