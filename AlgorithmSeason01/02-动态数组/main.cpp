@@ -25,9 +25,11 @@ int main() {
 	std::cout << "Size of persons: " << persons.getSize() << std::endl;
 	std::cout << "Size of ints: " << ints.getSize() << std::endl;
 
-	for (int i = 0; i < persons.getSize(); i++) {
-		std::cout << persons.get(i).name() << " " << persons.get(i).age() << std::endl;
-	}
+    for (int i = 0; i < persons.getSize(); i++)
+    {
+        std::cout << persons.get(i).getName() << " " << persons.get(i).getAge() << std::endl;
+    }
+
 
 	for (int i = 0; i < ints.getSize(); i++) {
 		std::cout << ints.get(i) << std::endl;
