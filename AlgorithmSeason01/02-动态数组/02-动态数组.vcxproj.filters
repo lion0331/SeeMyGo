@@ -21,9 +21,6 @@
     <ClInclude Include="ArrayList.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Asserts.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="Person.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -33,9 +30,6 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="ArrayList.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Asserts.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Person.cpp">
