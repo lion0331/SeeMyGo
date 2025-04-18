@@ -141,19 +141,19 @@ std::string Times::getCurrentTime() {
 // 一个例子，测试 Times 类
 int main() {
 	Times times; // 创建 Times 类的对象
-	times.test("示例任务", [&times]() {
+	times.test("fib1", [&times]() {
 		// 放入你需要测试耗时的代码
 		times.fib1(40);
 		});
-	times.test("示例任务", [&times]() {
+	times.test("fib2", [&times]() {
 		// 放入你需要测试耗时的代码
 		times.fib2(8000000);
 		});
-	times.test("示例任务", [&times]() {
+	times.test("fib3", [&times]() {
 		// 放入你需要测试耗时的代码
 		times.fib3(8000000);
 		});
-	times.test("示例任务", [&times]() {
+	times.test("test10", [&times]() {
 		// 放入你需要测试耗时的代码
 		times.test10(8);
 		});
