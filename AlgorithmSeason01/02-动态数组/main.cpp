@@ -10,7 +10,7 @@ int main() {
         persons.add(Person(12, "James"));
         persons.add(Person(15, "Rose"));
         persons.clear();
-        persons.add(Person(22, "Saga"));
+        persons.add(Person(22, "Shaka"));
 
 
         ArrayList<Person> newPersons;
@@ -34,7 +34,6 @@ int main() {
 	for (int i = 0; i < ints.getSize(); i++) {
 		std::cout << ints.get(i) << std::endl;
 	}
-	return 0;
 
 	return 0;
 }
