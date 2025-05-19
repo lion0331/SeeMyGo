@@ -35,7 +35,7 @@ void test() {
 
 int main() {
 	cout << "Hello World!!!" << endl;
-	
+	test();
 	// 等待键盘输入（如果敲回车，就会读取键盘输入）
 	getchar();
 	return 0;

@@ -39,9 +39,9 @@ int main() {
 	/*void(*p)(int) = test;
 	p(10);*/
 
-	//cout << sum() << endl; // 11
-	//cout << sum(10) << endl; // 16
-	//cout << sum(10, 20) << endl; // 30
+	cout << sum() << endl; // 7
+	cout << sum(10) << endl; // 14
+	cout << sum(10, 20) << endl; // 30
 
 	getchar();
 	return 0;
