@@ -33,22 +33,26 @@ using namespace std;
 //}
 
 // display_v
-void display() {
+void display()
+{
 	cout << "display()" << endl;
 }
 
 // display_i
-void display(int a) {
+void display(int a)
+{
 	cout << "display(int) - " << a << endl;
 }
 
 // display_l
-void display(long a) {
+void display(long a)
+{
 	cout << "display(long) - " << a << endl;
 }
 
 // display_d
-void display(double a) {
+void display(double a)
+{
 	cout << "display(double) - " << a << endl;
 }
 
@@ -57,13 +61,14 @@ void display(double a) {
 
 // 反汇编
 // 逆向工程
-int main() {
+int main(int argc , char* argv[],char* envp[])
+{
 
 	display();
 	display(10);
 	display(10L);
-	display(10.0); 
-	
+	display(10.0);
+
 	// 1010 1010 1111 0001 1010 1011
 	// AA F1 AB 
 
