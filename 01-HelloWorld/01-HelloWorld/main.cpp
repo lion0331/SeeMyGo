@@ -10,7 +10,8 @@ using namespace std;
 // 方法 == 函数  GBK GB2312 GB18030
 
 // Java:先有类，再有方法（函数）
-void test() {
+void test()
+{
 	// VS很多设计比较反人类
 	// cout << "Hello World!!!" << endl;
 
@@ -33,7 +34,8 @@ void test() {
 	getchar();
 }
 
-int main() {
+int main()
+{
 	cout << "Hello World!!!" << endl;
 	test();
 	// 等待键盘输入（如果敲回车，就会读取键盘输入）
