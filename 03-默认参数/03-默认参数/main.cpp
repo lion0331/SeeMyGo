@@ -15,11 +15,13 @@ using namespace std;
 //	p(v1);
 //}
 
-int sum(int v1 = 3, int v2 = 4) {
+int sum(int v1 = 3, int v2 = 4)
+{
 	return v1 + v2;
 }
 
-int main() {
+int main()
+{
 
 	sum(1, 4);
 	sum(2, 4);
