@@ -10,7 +10,8 @@ using namespace std;
 #include "math.h"
 #include "test.h"
 
-int main() {
+int main(int argc, char* argv[], char* envp[])
+{
 
 	cout << sum(10, 20) << endl;
 	cout << delta(30, 20) << endl;
