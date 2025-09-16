@@ -1,13 +1,15 @@
 ﻿#include <iostream>
 using namespace std;
 
-struct Date {
+struct Date
+{
 	int year;
 	int month;
 	int day;
 };
 
-int main() {
+int main(int argc, char* argv[], char* envp[])
+{
 	// const int age = 20;
 
 	/*const Date d = {2011, 2, 5};
@@ -29,15 +31,15 @@ int main() {
 	int height = 30;
 
 	// p1不是常量，*p1是常量
-	const int *p1 = &age;
+	const int* p1 = &age;
 	// p2不是常量，*p2是常量
-	int const *p2 = &age;
+	int const* p2 = &age;
 	// p3是常量，*p3不是常量
-	int * const p3 = &age;
+	int* const p3 = &age;
 	// p4是常量，*p4也是常量
-	const int * const p4 = &age;
+	const int* const p4 = &age;
 	// p5是常量，*p5也是常量
-	int const * const p5 = &age;
+	int const* const p5 = &age;
 
 	//*p4 = 20; // age = 20;
 	//p4 = &height;

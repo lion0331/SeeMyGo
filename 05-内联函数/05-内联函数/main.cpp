@@ -7,19 +7,23 @@ using namespace std;
 2.频繁调用的函数
 */
 
-inline void func() {
+inline void func()
+{
 	cout << "func()" << endl;
 }
 
-inline int sum(int v1, int v2) {
-	return v1 + v2; 
+inline int sum(int v1, int v2)
+{
+	return v1 + v2;
 }
 
-inline void run() {
+inline void run()
+{
 	run();
 }
 
-void test() {
+void test()
+{
 	run();
 	func();
 
@@ -29,12 +33,14 @@ void test() {
 
 // #define add(v) v + v
 
-inline int add(int v) {
+inline int add(int v)
+{
 	return v + v;
 }
- 
+
 // 代价
-int main() {
+int main(int argc, char* argv[], char* envp[])
+{
 	/*int a = 10;
 	int c = add(++a);
 
