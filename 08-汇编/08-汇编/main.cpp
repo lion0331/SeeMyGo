@@ -1,25 +1,29 @@
 ﻿#include <iostream>
 using namespace std;
 
-void test() {
+void test()
+{
 
 }
 
-void func() {
+void func()
+{
 	int a = 1;
 	int b = 2;
 	int c = a + b;
 }
 
-int sum(int a, int b) {
+int sum(int a, int b)
+{
 	return a + b;
 }
 
-int main() {
+int main(int argc, char* argv[], char* envp[])
+{
 
 	int age = 3;
 
-	int &ref = age;
+	int& ref = age;
 	ref = 5;
 
 	getchar();
