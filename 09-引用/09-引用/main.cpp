@@ -1,13 +1,15 @@
 ﻿#include <iostream>
 using namespace std;
 
-struct Date {
+struct Date
+{
 	int year;
 	int month;
 	int day;
 };
 
-void test() {
+void test()
+{
 	/*int age = 10;
 	int &ref = age;*/
 
@@ -35,25 +37,26 @@ void test() {
 	*/
 }
 
-void test1() {
+void test1()
+{
 	int height = 20;
 	int age = 10;
 
 	// ref1不能修改指向，但是可以通过ref1间接修改所指向的变量
-	int & const ref1 = age;
+	int& const ref1 = age;
 	ref1 = 30;
 
 	// ref2不能修改指向，不可以通过ref2间接修改所指向的变量
-	int const &ref2 = age;
+	int const& ref2 = age;
 	// ref2 = 40;
 
 	// p1不能修改指向，可以利用p1间接修改所指向的变量
-	int * const p1 = &age;
+	int* const p1 = &age;
 	// p1 = &height;
 	*p1 = 30;
 
 	// p2可以修改指向，不可以利用p2间接修改所指向的变量
-	int const *p2 = &age;
+	int const* p2 = &age;
 	p2 = &height;
 	// *p2 = 30;
 
@@ -67,21 +70,25 @@ void test1() {
 	cout << *p << endl;*/
 }
 
-int func() {
+int func()
+{
 	return 8;
 }
 
-int sum(int &v1, int &v2) {
+int sum(int& v1, int& v2)
+{
 	cout << "sum(int &v1, int &v2)" << endl;
 	return v1 + v2;
 }
 
-int sum(const int &v1, const int &v2) {
+int sum(const int& v1, const int& v2)
+{
 	cout << "sum(const int &v1, const int &v2)" << endl;
 	return v1 + v2;
 }
 
-void test2() {
+void test2()
+{
 	// 非const实参
 	int a = 10;
 	int b = 20;
@@ -98,7 +105,8 @@ void test2() {
 // 不同编程语言转成的汇编是一样的么？
 // Java、C++、OC、Swift写代码  --> 汇编\机器码（取决于CPU架构）
 // X86 ARM
-int main() {
+int main(int argc, char* argv[], char* envp[])
+{
 
 	/*int age = 10;
 	const long &ref = age;
@@ -108,9 +116,9 @@ int main() {
 
 	// 数组名arr其实是数组的地址，也是数组首元素的地址
 	// 数组名arr可以看做是指向数组首元素的指针（int *）
-	int arr[] = {1, 2, 3};
+	int arr[] = { 1, 2, 3 };
 	// int (&ref)[3] = arr;
-	int * const &ref = arr;
+	int* const& ref = arr;
 
 	// int age = 10;
 	// const double &ref = age;
@@ -121,6 +129,6 @@ int main() {
 	//// const int &ref = a + b;
 	//const int &ref = func();
 
-	getchar();
+	system("pause");
 	return 0;
 }
