@@ -26,6 +26,6 @@ int main(int argc, char* argv[], char* envp[])
 	int& ref = age;
 	ref = 5;
 
-	getchar();
+	system("pause");
 	return 0;
 }
