@@ -13,17 +13,20 @@ using namespace std;
 
 // 语法糖层面、概念层面
 // class
-struct Person {
+struct Person
+{
 	// 成员变量（属性）
 	int m_age;
 
 	// 成员函数（方法）
-	void run() {
+	void run()
+	{
 		cout << "Person::run() - " << m_age << endl;
 	}
 };
 
-void test() {
+void test()
+{
 	// Java\JS
 	// Person person = new Person();
 
@@ -35,7 +38,7 @@ void test() {
 	person.m_age = 20;
 	person.run();
 
-	Person *p = &person;
+	Person* p = &person;
 	p->m_age = 40;
 	p->run();
 
@@ -49,16 +52,19 @@ void test() {
 	person3.m_age = 30;
 }
 
-class Car {
+class Car
+{
 public:
 	int m_price;
 
-	void run() {
+	void run()
+	{
 		cout << "Car::run() " << m_price << endl;
 	}
 };
 
-int main() {
+int main(int argc, char* argv[], char* envp[])
+{
 	// mov         dword ptr [ebp-8],0Ah
 	// mov         dword ptr [ebp-8],0Ah
 	Car car;
