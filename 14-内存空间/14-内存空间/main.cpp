@@ -11,8 +11,9 @@ using namespace std;
 //	g_age = 1;
 //}
 
-void test() {
-	int *p = (int *) malloc(4);
+void test()
+{
+	int* p = (int*)malloc(4);
 	*p = 10;
 
 	/*char *p = (char *) malloc(4);
@@ -30,7 +31,8 @@ void test() {
 	/*free(p);*/
 }
 
-void test2() {
+void test2()
+{
 	/*int *p = new int;
 	*p = 10;
 
@@ -41,17 +43,18 @@ void test2() {
 
 	delete p;*/
 
-	char *p = new char[4];
+	char* p = new char[4];
 
 	delete[] p;
 }
 
-void test3() {
+void test3()
+{
 	// int *p = (int *) malloc(4);
 	// *p = 0;
 
 	int size = sizeof(int) * 10;
-	int *p = (int *) malloc(size);
+	int* p = (int*)malloc(size);
 	// memory set
 	memset(p, 0, size);
 
@@ -65,17 +68,19 @@ void test3() {
 	// 00000001 00000001 00000001 00000001
 }
 
-void test4() {
-	int *p0 = new int;
-	int *p1 = new int();
-	int *p2 = new int(5);
+void test4()
+{
+	int* p0 = new int;
+	int* p1 = new int();
+	int* p2 = new int(5);
 
 	cout << *p0 << endl;
 	cout << *p1 << endl;
 	cout << *p2 << endl;
 }
 
-int main() {
+int main(int argc, char* argv[], char* envp[])
+{
 
 	test4();
 

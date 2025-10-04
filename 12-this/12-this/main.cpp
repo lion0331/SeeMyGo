@@ -25,16 +25,19 @@ using namespace std;
 //	}
 //};
 
-void func() {
+void func()
+{
 
 }
 
-struct Person {
+struct Person
+{
 	int m_id;
 	int m_age;
 	int m_height;
 
-	void display() {
+	void display()
+	{
 		// 中断：interrupt
 		// cc -> int3 ：起到断点的作用
 		// int3int3int3
@@ -48,14 +51,15 @@ struct Person {
 	}
 };
 
-void test() {
+void test()
+{
 	Person person;
 	person.m_id = 10;
 	person.m_age = 20;
 	person.m_height = 30;
 	person.display();
 
-	Person *p = &person;
+	Person* p = &person;
 	p->m_id = 10;
 	p->m_age = 10;
 	p->m_height = 10;
@@ -63,14 +67,16 @@ void test() {
 }
 
 // 调用函数的时候，需要分配额外的存储空间来存储函数内部的局部变量
-void test5() {
+void test5()
+{
 	int a = 10;
 	a += 20;
 	int b = 20;
 	int c = 30;
 }
 
-int main() {
+int main(int argc, char* argv[], char* envp[])
+{
 	test5();
 
 	Person person;
@@ -78,7 +84,7 @@ int main() {
 	person.m_age = 20;
 	person.m_height = 30;
 
-	Person *p = (Person *) &person.m_age;
+	Person* p = (Person*)&person.m_age;
 	// eax == &person.m_age == &person + 4
 	// mov eax, dword ptr [p]
 	// mov dword ptr [eax + 0], 40

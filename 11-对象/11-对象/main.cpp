@@ -1,13 +1,15 @@
 ﻿#include <iostream>
 using namespace std;
 
-struct Person {
+struct Person
+{
 	int m_id;
 	int m_age;
 	int m_height;
 
-	void display() {
-		cout << "id = " << m_id 
+	void display()
+	{
+		cout << "id = " << m_id
 			<< ", age = " << m_age
 			<< ", height = " << m_height << endl;
 	}
@@ -16,7 +18,8 @@ struct Person {
 // 全局区（数据段）
 // Person person;
 
-int main() {
+int main(int argc, char* argv[], char* envp[])
+{
 
 	// 这个person对象内存在栈空间
 	Person person;

@@ -1,24 +1,31 @@
 ﻿#include <iostream>
 using namespace std;
 
-struct Person {
+struct Person
+{
 private:
 	int m_age;
 public:
-	void setAge(int age) {
-		if (age <= 0) {
+	void setAge(int age)
+	{
+		if (age <= 0)
+		{
 			m_age = 1;
-		} else {
+		}
+		else
+		{
 			m_age = age;
 		}
 	}
 
-	int getAge() {
+	int getAge()
+	{
 		return m_age;
 	}
 };
 
-int main() {
+int main(int argc, char* argv[], char* envp[])
+{
 	Person person;
 	person.setAge(-4);
 
