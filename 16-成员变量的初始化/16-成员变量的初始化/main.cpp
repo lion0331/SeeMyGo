@@ -1,10 +1,12 @@
 ﻿#include <iostream>
 using namespace std;
 
-struct Person {
+struct Person
+{
 	int m_age;
 
-	Person() {
+	Person()
+	{
 		memset(this, 0, sizeof(Person));
 	}
 };
@@ -12,14 +14,15 @@ struct Person {
 // 全局区：成员变量初始化为0
 Person g_person;
 
-void test() {
+void test()
+{
 	// 栈空间：没有初始化成员变量
 	// Person person; 
 
 	// 堆空间：没有初始化成员变量
-	Person *p0 = new Person;
+	Person* p0 = new Person;
 	// 堆空间：成员变量初始化为0
-	Person *p1 = new Person();
+	Person* p1 = new Person();
 
 	cout << g_person.m_age << endl;
 	// cout << person.m_age << endl;
@@ -27,8 +30,9 @@ void test() {
 	cout << p1->m_age << endl;
 }
 
-int main() {
-	
+int main(int argc, char* argv[], char* envp[])
+{
+
 	/*Person *p = new Person[3] {};
 
 	cout << p[0].m_age << endl;*/

@@ -1,27 +1,32 @@
 ﻿#include <iostream>
 using namespace std;
 
-class Person {
+class Person
+{
 	int m_age;
 public:
 	// 新的Person对象诞生的象征
-	Person() {
+	Person()
+	{
 		cout << "Person::Person()" << endl;
 	}
 
 	// 一个Person对象销毁的象征
-	~Person() {
+	~Person()
+	{
 		cout << "~Person()" << endl;
 	}
 };
 
-void test() {
+void test()
+{
 	Person person;
 }
 
-int main() {
+int main(int argc, char* argv[], char* envp[])
+{
 
-	Person *p = new Person;
+	Person* p = new Person;
 
 	// 堆空间的地址
 	cout << p << endl;
@@ -29,7 +34,7 @@ int main() {
 	cout << &p << endl;
 
 	delete p;
-		 
+
 	getchar();
 	return 0;
 }
