@@ -1,18 +1,18 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 
-// CÓïÑÔ£ºc
-// OC£ºm
-// JS£ºjs
-// Java£ºjava
-// C++£ºcpp
+// Cè¯­è¨€ï¼šc
+// OCï¼šm
+// JSï¼šjs
+// Javaï¼šjava
+// C++ï¼šcpp
 
-// ·½·¨ == º¯Êı  GBK GB2312 GB18030
+// æ–¹æ³• == å‡½æ•°  GBK GB2312 GB18030
 
-// Java:ÏÈÓĞÀà£¬ÔÙÓĞ·½·¨£¨º¯Êı£©
+// Java:å…ˆæœ‰ç±»ï¼Œå†æœ‰æ–¹æ³•ï¼ˆå‡½æ•°ï¼‰
 void test()
 {
-	// VSºÜ¶àÉè¼Æ±È½Ï·´ÈËÀà
+	// VSå¾ˆå¤šè®¾è®¡æ¯”è¾ƒåäººç±»
 	// cout << "Hello World!!!" << endl;
 
 	//cout << "Hello";
@@ -20,7 +20,7 @@ void test()
 	//cout << endl;
 	//cout << "World";
 
-	// ÃæÏò¶ÔÏó¡¢ÔËËã·û£¨²Ù×÷·û£©ÖØÔØ
+	// é¢å‘å¯¹è±¡ã€è¿ç®—ç¬¦ï¼ˆæ“ä½œç¬¦ï¼‰é‡è½½
 	// cout << "Hello" << endl << "World";
 
 	cout << "please type a number:" << endl;
@@ -38,7 +38,7 @@ int main(int argc, char* argv[], char* envp[])
 {
 	cout << "Hello World!!!" << endl;
 	test();
-	// µÈ´ı¼üÅÌÊäÈë£¨Èç¹ûÇÃ»Ø³µ£¬¾Í»á¶ÁÈ¡¼üÅÌÊäÈë£©
+	// ç­‰å¾…é”®ç›˜è¾“å…¥ï¼ˆå¦‚æœæ•²å›è½¦ï¼Œå°±ä¼šè¯»å–é”®ç›˜è¾“å…¥ï¼‰
 	getchar();
 	return 0;
 }
