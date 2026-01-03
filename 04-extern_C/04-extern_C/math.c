@@ -1,4 +1,4 @@
-﻿
+
 #include "math.h"
 
 // _sum
