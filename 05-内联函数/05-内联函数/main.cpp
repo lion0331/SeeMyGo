@@ -1,10 +1,10 @@
-ï»¿#include <iostream>
+#include <iostream>
 using namespace std;
 
 /*
-ä»€ä¹ˆæ—¶å€™ä½¿ç”¨å†…è”å‡½æ•°ï¼Ÿ
-1.å‡½æ•°ä»£ç ä½“ç§¯ä¸å¤§
-2.é¢‘ç¹è°ƒç”¨çš„å‡½æ•°
+Ê²Ã´Ê±ºòÊ¹ÓÃÄÚÁªº¯Êı£¿
+1.º¯Êı´úÂëÌå»ı²»´ó
+2.Æµ·±µ÷ÓÃµÄº¯Êı
 */
 
 inline void func()
@@ -38,7 +38,7 @@ inline int add(int v)
 	return v + v;
 }
 
-// ä»£ä»·
+// ´ú¼Û
 int main(int argc, char* argv[], char* envp[])
 {
 	/*int a = 10;

@@ -1,4 +1,4 @@
-ï»¿#include <iostream>
+#include <iostream>
 using namespace std;
 
 struct Date
@@ -30,15 +30,15 @@ int main(int argc, char* argv[], char* envp[])
 	int age = 10;
 	int height = 30;
 
-	// p1ä¸æ˜¯å¸¸é‡ï¼Œ*p1æ˜¯å¸¸é‡
+	// p1²»ÊÇ³£Á¿£¬*p1ÊÇ³£Á¿
 	const int* p1 = &age;
-	// p2ä¸æ˜¯å¸¸é‡ï¼Œ*p2æ˜¯å¸¸é‡
+	// p2²»ÊÇ³£Á¿£¬*p2ÊÇ³£Á¿
 	int const* p2 = &age;
-	// p3æ˜¯å¸¸é‡ï¼Œ*p3ä¸æ˜¯å¸¸é‡
+	// p3ÊÇ³£Á¿£¬*p3²»ÊÇ³£Á¿
 	int* const p3 = &age;
-	// p4æ˜¯å¸¸é‡ï¼Œ*p4ä¹Ÿæ˜¯å¸¸é‡
+	// p4ÊÇ³£Á¿£¬*p4Ò²ÊÇ³£Á¿
 	const int* const p4 = &age;
-	// p5æ˜¯å¸¸é‡ï¼Œ*p5ä¹Ÿæ˜¯å¸¸é‡
+	// p5ÊÇ³£Á¿£¬*p5Ò²ÊÇ³£Á¿
 	int const* const p5 = &age;
 
 	//*p4 = 20; // age = 20;
