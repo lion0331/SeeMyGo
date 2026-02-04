@@ -103,8 +103,6 @@ int main(int argc, char* argv[], char* envp[])
 
 	cout << 0xCC << endl;
 
-
-
 	getchar();
 	return 0;
 }
