@@ -41,7 +41,7 @@ public:
 	}
 };
 
-int main(int argc, char* argv[], char* envp[])
+int main(int argc, const char* argv[], const char* envp[])
 {
 
 	// 内存泄露：该释放的内存并没有得到释放

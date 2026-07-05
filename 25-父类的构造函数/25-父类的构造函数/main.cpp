@@ -41,7 +41,7 @@ Student::~Student()
 Person::~Person()
 */
 
-int main() {
+int main(int argc, const char* argv[], const char* envp[]) {
 
 	{
 		Student student;

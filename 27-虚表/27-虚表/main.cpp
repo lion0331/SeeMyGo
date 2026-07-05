@@ -35,7 +35,7 @@ struct Cat : Animal {
 	}
 };
 
-int main() {
+int main(int argc, const char* argv[], const char* envp[]) {
 	// 动态性
 
 	Animal *cat0 = new Cat();

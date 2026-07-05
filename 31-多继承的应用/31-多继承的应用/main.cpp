@@ -43,7 +43,7 @@ public:
 	}
 };
 
-int main() {
+int main(int argc, const char* argv[], const char* envp[]) {
 
 	/*
 	兼职中心，招聘兼职，岗位如下：

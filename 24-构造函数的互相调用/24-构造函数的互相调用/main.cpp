@@ -23,7 +23,7 @@ struct Person {
 	}
 };
 
-int main() {
+int main(int argc, const char* argv[], const char* envp[]) {
 
 	Person person;
 	cout << person.m_age << endl;

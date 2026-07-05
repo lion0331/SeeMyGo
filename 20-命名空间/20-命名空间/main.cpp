@@ -36,7 +36,8 @@ namespace MJ {
 	}
 }
 
-int main() {
+int main(int argc, const char* argv[], const char* envp[]) 
+{
 	using namespace MJ;
 	/*using namespace MJ;
 	MJ::func();

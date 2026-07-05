@@ -28,7 +28,7 @@ struct Undergraduate : Student, Worker {
 	int m_grade = 4;
 };
 
-int main() {
+int main(int argc, const char* argv[], const char* envp[]) {
 	Undergraduate ug;
 	ug.m_age = 10;
 

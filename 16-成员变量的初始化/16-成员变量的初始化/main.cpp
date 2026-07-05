@@ -30,7 +30,7 @@ void test()
 	cout << p1->m_age << endl;
 }
 
-int main(int argc, char* argv[], char* envp[])
+int main(int argc, const char* argv[], const char* envp[])
 {
 
 	/*Person *p = new Person[3] {};

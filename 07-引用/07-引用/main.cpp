@@ -60,6 +60,8 @@ int main(int argc, char* argv[], char* envp[])
 {
 	// cout << sizeof(Student) << endl;
 
+	test2();
+
 	int age = 10;
 
 	// *p就是age的别名

@@ -58,7 +58,7 @@ int Car::ms_count = 0;
 
 Car g_car;
 
-int main() {
+int main(int argc, const char* argv[], const char* envp[]) {
 
 	Car car;
 

@@ -83,7 +83,7 @@ Person g_person0; // Person()
 Person g_person1(); // 函数声明
 Person g_person2(10); // Person(int)
 
-int main(int argc, char* argv[], char* envp[])
+int main(int argc, const char* argv[], const char* envp[])
 {
 
 	Person person0; // Person()

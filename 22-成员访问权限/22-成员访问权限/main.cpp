@@ -46,7 +46,8 @@ struct Person {
 	int m_age;
 };
 
-int main() {
+int main(int argc, const char* argv[], const char* envp[]) 
+{
 	/*Person person;
 	person.m_age = 10;*/
 

@@ -3,6 +3,7 @@ using namespace std;
 
 class Person
 {
+private:
 	int m_age;
 public:
 	// 新的Person对象诞生的象征
@@ -23,7 +24,7 @@ void test()
 	Person person;
 }
 
-int main(int argc, char* argv[], char* envp[])
+int main(int argc, const char* argv[], const char* envp[])
 {
 
 	Person* p = new Person;

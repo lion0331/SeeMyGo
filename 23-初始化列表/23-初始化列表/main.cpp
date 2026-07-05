@@ -36,7 +36,7 @@ Person::Person(int age, int height) :m_age(age), m_height(height) {
 	
 }
 
-int main() {
+int main(int argc, const char* argv[], const char* envp[]) {
 	/*
 	push        2  
 	push        1  

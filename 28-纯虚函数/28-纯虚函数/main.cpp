@@ -20,7 +20,7 @@ struct Hashiqi : Dog {
 	}
 };
 
-int main() {
+int main(int argc, const char* argv[], const char* envp[]) {
 
 	getchar();
 	return 0;

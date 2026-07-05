@@ -30,7 +30,8 @@ struct GoodStudent : Student {
 	int m_money;
 };
 
-int main() {
+int main(int argc, const char* argv[], const char* envp[]) 
+{
 
 	cout << sizeof(GoodStudent) << endl;
 

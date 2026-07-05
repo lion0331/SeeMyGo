@@ -61,7 +61,7 @@ void liu(Animal *p) {
 	p->run();
 }
 
-int main() {
+int main(int argc, const char* argv[], const char* envp[]) {
 	/*Animal *p = new Pig();
 	p->speak();
 	p->run();*/
