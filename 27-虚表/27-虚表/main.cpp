@@ -49,13 +49,13 @@ int main(int argc, const char* argv[], const char* envp[]) {
 	cat1->speak();
 	cat1->run();*/
 
-	/*Animal *anim = new Animal();
+	Animal *anim = new Animal();
 	anim->speak();
 	anim->run();
 
 	Animal *cat = new Cat();
 	cat->speak();
-	cat->run();*/
+	cat->run();
 
 	getchar();
 	return 0;
